@@ -1,0 +1,35 @@
+@import url('../components/menu/style.css');
+@import url('../pages/main-page/components/main-screen/style.css');
+@import url('../pages/main-page/components/about/style.css');
+@import url('../components/footer/style.css');
+
+/*.homeworks {*/
+/*    background: red;*/
+/*}*/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: font-awesome;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

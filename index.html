@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+<!--  <link rel="stylesheet" href="components/menu/style.css">-->
+  <title>Сайт</title>
+</head>
+<body>
+<!--<div id="menu"></div>-->
+<header>
+<!--  <link rel="stylesheet" href="style.css">-->
+  <script src="components/menu/script.js"></script>
+  <div class="logo">
+    <div class="circle"></div>
+    <div class="line line_first"></div>
+    <div class="line line_second"></div>
+    <div class="line line_third"></div>
+    <div class="line line_fourth"></div>
+  </div>
+  <div class="desktop-menu">
+    <nav>
+      <ul class="menu">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/pages/homeworks-page/index.html">Домашние работы</a></li>
+        <li><a href="main">Курсовая работа</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mobile-menu">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="menu-hamburger">
+      <ul>
+        <li><a href="main">Главная</a></li>
+        <li><a href="homeworks">Домашние работы</a></li>
+        <li><a href="main">Курсовая работа</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="main-screen" class="main-page-main-screen-wrapper">
+  <img
+          class="main-page-main-screen-image"
+          src="/images/main-background.jpg"
+          alt="background"
+          loading="lazy"
+          decoding="async"
+  />
+  <img
+          class="main-page-main-screen-image main-page-main-screen-image_mobile"
+          src="/images/main-background.jpg"
+          alt="background"
+          loading="lazy"
+          decoding="async"
+  />
+  <div class="main-page-main-screen">
+    <div class="main-page-main-screen__content">
+      <h1 class="main-page-main-screen__title">
+        NATURE
+      </h1>
+      <p class="main-page-main-screen__text">
+        Если вы действительно любите природу, вы найдете красоту везде
+      </p>
+      <p class="main-page-main-screen__text">
+        Винсент Ван Гог
+      </p>
+    </div>
+  </div>
+</div>
+<div id="about" class="main-page-about">
+  <div class="container">
+    <div class="main-page-about__right">
+      <img
+              src="/images/main-girl.jpg"
+              alt="About image"
+      />
+    </div>
+    <div class="main-page-about__left">
+      <h1 class="main-page-about__title">
+        Природа
+      </h1>
+      <div class="main-page-about__description">
+        Природа — это безграничный источник красоты и вдохновения, который поразительным образом соединяет в себе великолепие и гармонию. Каждый ее аспект, от величественных гор до спокойных водоемов, наполняет нашу жизнь яркими красками и незабываемыми впечатлениями.
+      </div>
+      <div class="main-page-about__description">
+        Восход солнца над горными вершинами, когда облака окрашиваются в нежные оттенки розового и золотистого, наполняет сердце теплом и радостью. Легкий ветер, несущий свежесть лесных просторов, пробуждает в нас чувства свободы и безмятежности.
+      </div>
+
+      <div class="main-page-about__description">
+        Каждая деталь природы уникальна: шум сливающихся потоков рек, трели птиц на рассвете, аромат цветущих деревьев в весенний день — все это создает волшебные моменты, которые невозможно забыть. Природа вдохновляет художников, поэтов и музыкантов, побуждая их создавать произведения, которые передают ее красоту и жизненную силу.
+      </div>
+
+      <div class="main-page-about__description">
+        Леса, наполненные зеленью, предлагают нам спокойствие и укрытие от повседневной жизни. Солнечные лучи, пробивающиеся сквозь листву, добавляют волшебства и загадочности. На берегах рек и озер, где мир отражается в воде, мы ощущаем связь со Вселенной, а каждый мгновение кажется бесценным.
+      </div>
+
+      <div class="main-page-about__description">
+        Заблуждаясь среди полевых цветов или поднимаясь на вершины, мы можем увидеть нечто большее, чем просто природные ландшафты. Мы видим свою связь с миром и собственными эмоциями, находим вдохновение в безмолвии и красоте вокруг нас. Природа учит нас ценить простые радости, быть внимательными к деталям и сохранять гармонию внутри себя.
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--<div id="about"></div>-->
+<!--<script>-->
+<!--  fetch('pages/main-page/components/main-screen/index.html')-->
+<!--          .then(response => response.text())-->
+<!--          .then(data => {-->
+<!--            document.getElementById('main-screen').innerHTML = data;-->
+<!--          });-->
+<!--</script>-->
+<!--<script>-->
+<!--  fetch('pages/main-page/components/about/index.html')-->
+<!--          .then(response => response.text())-->
+<!--          .then(data => {-->
+<!--            document.getElementById('about').innerHTML = data;-->
+<!--          });-->
+<!--</script>-->
+<footer style="background-color: #282c34; color: white; text-align: center; padding: 20px;">
+  <p>© 2024 Ваша компания. Все права защищены.</p>
+  <ul style="list-style-type: none; padding: 0;">
+    <li><a href="main">Главная</a></li>
+    <li><a href="homeworks">Домашние работы</a></li>
+    <li><a href="main">Курсовая работа</a></li>
+  </ul>
+</footer>
+</body>
+</html>

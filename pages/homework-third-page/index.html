@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../pages/homework-third-page/style.css">
+</head>
+<body>
+<header>
+    <script src="../../components/menu/script.js"></script>
+    <div class="logo">
+        <div class="circle"></div>
+        <div class="line line_first"></div>
+        <div class="line line_second"></div>
+        <div class="line line_third"></div>
+        <div class="line line_fourth"></div>
+    </div>
+    <div class="desktop-menu">
+        <nav>
+            <ul class="menu">
+                <li><a href="main">Главная</a></li>
+                <li><a href="homeworks">Домашние работы</a></li>
+                <li><a href="main">Курсовая работа</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile-menu">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="menu-hamburger">
+            <ul>
+                <li><a href="main">Главная</a></li>
+                <li><a href="homeworks">Домашние работы</a></li>
+                <li><a href="main">Курсовая работа</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<script src="../../components/menu/script.js"></script>
+<div id="homework-third" class="homework-third">
+    <div class="container">
+        <div class="quiz">
+            <div class="question-counter"></div>
+            <div class="questions"></div>
+            <div class="answers"></div>
+            <div class="result"></div>
+            <button id="button-again" class="again-button">Пройти еще раз</button>
+        </div>
+    </div>
+</div>
+<script src="../../pages/homework-third-page/script.js"></script>
+</body>
+</html>

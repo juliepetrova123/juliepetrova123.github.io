@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перетаскивание элементов</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .box {
+            border: 1px solid #cccccc;
+            width: 30%;
+            min-height: 300px;
+            padding: 10px;
+        }
+
+        .draggable {
+            margin: 5px 0;
+            padding: 8px;
+            background-color: #f0f0f0;
+            cursor: move;
+        }
+
+        .over {
+            border: 2px dashed #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box" id="box1">
+        <h3>Блок 1</h3>
+        <input type="text" id="inputText" placeholder="Введите элементы через '-'"/>
+        <button onclick="createItems()">Создать элементы</button>
+    </div>
+    <div class="box" id="box2" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <h3>Блок 2</h3>
+    </div>
+    <div class="box" id="box3" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <h3>Блок 3</h3>
+    </div>
+</div>
+
+<script src="../../pages/homework-fourth-page/homework-fourth-page.js"></script>
+
+</body>
+</html>

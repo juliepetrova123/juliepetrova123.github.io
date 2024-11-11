@@ -1,0 +1,99 @@
+.animation-block {
+    height: 700px;
+}
+
+.container-big {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.label {
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container-animation {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    transition: opacity 1s 5s;
+    display: flex;
+    /*position: absolute;*/
+    border: 2px solid lightgrey;
+}
+
+/* Скрываем чекбокс */
+.toggle {
+    top: 100px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+.pic-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.animation-brand {
+    width: 100%;
+    height: 100%;
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 1s 3s;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 50px;
+    font-size: 26px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 1s 3s;
+}
+
+/* Когда чекбокс отмечен, pic становится видимой */
+.toggle:checked + .container-animation {
+    animation: increase 3s forwards 4s;
+}
+.toggle:checked + .container-animation .pic {
+    opacity: 1;
+    top: -100px;
+}
+.toggle:checked + .container-animation .pic-text {
+    opacity: 1;
+}
+
+@keyframes increase {
+    0% {
+        width: 200px;
+        height: 200px;
+    }
+    50% {
+        width: 230px;
+        height: 230px;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+    }
+}

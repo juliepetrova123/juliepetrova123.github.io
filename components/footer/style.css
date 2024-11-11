@@ -1,0 +1,43 @@
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 40px);
+    font-family: font-awesome;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #61dafb; /* Цвет при наведении */
+}
+
+/* Социальные сети */
+footer p:last-of-type {
+    margin-top: 15px;
+}
+
+footer a {
+    margin: 0 10px;
+}

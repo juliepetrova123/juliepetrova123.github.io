@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #423189; /* Цвет фона */
+    padding: 10px 20px; /* Отступы */
+    position: fixed;
+    z-index: 999;
+    width: calc(100% - 40px);
+    font-family: font-awesome;
+}
+
+.logo {
+    font-size: 24px;
+    color: white; /* Цвет текста логотипа */
+    position: absolute;
+}
+
+
+
+
+.mobile-menu {
+    display: block;
+    position: relative;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.hamburger {
+    cursor: pointer;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: #FFF;
+    transition: all 0.3s ease;
+}
+
+.menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: -30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.menu-hamburger ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-hamburger li {
+    padding: 10px 15px;
+}
+
+.menu-hamburger li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-hamburger.active {
+    display: block;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+
+
+.line {
+    width: 50px;
+    height: 5px;
+    background-color: #FFF;
+    position: absolute;
+}
+.line_first {
+    transform: rotate(-50deg);
+    top: 0;
+    left: 20px;
+}
+.line_second {
+    transform: rotate(50deg);
+    top: 0;
+    left: 50px;
+}
+.line_third {
+    transform: rotate(-50deg);
+    /* top: 2px; */
+    left: 78px;
+    width: 25px;
+}
+.line_fourth {
+    transform: rotate(50deg);
+    top: 4px;
+    left: 90px;
+    width: 40px;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 78px;
+    top: -25px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .desktop-menu {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .menu {
+        list-style-type: none; /* Убираем маркеры */
+        padding: 0;
+        display: flex;
+        gap: 40px;
+    }
+
+    .menu li {
+        margin-left: 20px; /* Расстояние между пунктами */
+    }
+
+    .menu a {
+        text-decoration: none; /* Убираем подчеркивание */
+        color: white; /* Цвет ссылки */
+        font-size: 18px; /* Размер шрифта */
+        transition: color 0.3s; /* Анимация цвета */
+    }
+
+    .menu a:hover {
+        cursor: pointer;
+    / / color: #8ba0c8; /* Цвет при наведении */
+    }
+}

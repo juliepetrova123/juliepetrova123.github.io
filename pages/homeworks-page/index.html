@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../pages/homeworks-page/style.css">
+  <title>Домашние задания</title>
+</head>
+<body>
+<header>
+  <link rel="stylesheet" href="style.css">
+  <script src="../../components/menu/script.js"></script>
+  <div class="logo">
+    <div class="circle"></div>
+    <div class="line line_first"></div>
+    <div class="line line_second"></div>
+    <div class="line line_third"></div>
+    <div class="line line_fourth"></div>
+  </div>
+  <div class="desktop-menu">
+    <nav>
+      <ul class="menu">
+        <li><a href="main">Главная</a></li>
+        <li><a href="homeworks">Домашние работы</a></li>
+        <li><a href="main">Курсовая работа</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mobile-menu">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="menu-hamburger">
+      <ul>
+        <li><a href="main">Главная</a></li>
+        <li><a href="homeworks">Домашние работы</a></li>
+        <li><a href="main">Курсовая работа</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script src="../../components/menu/script.js"></script>
+<div id="homeworks" class="homeworks-page">
+  <div class="container">
+    <div class="homeworks-menu">
+      <h2 class="homeworks-menu__title">
+        Домашние работы
+      </h2>
+      <div class="homeworks-menu__content">
+        <div class="homework-card__wrapper">
+          <a href="homework-first" class="homework-card">
+            <div class="homework-card__title">
+              Рисунок CSS
+            </div>
+            <div class="homework-card__text">
+              Создать рисунки с помощью стилевой таблицы. Размер 200х200px.
+            </div>
+          </a>
+        </div>
+        <div class="homework-card__wrapper">
+          <a href="homework-second" class="homework-card">
+            <div class="homework-card__title">
+              Flexbox-бренд
+            </div>
+            <div class="homework-card__text">
+              Создать компонент рекламного ролика с размером 200х200px.
+            </div>
+          </a>
+        </div>
+        <div class="homework-card__wrapper">
+          <a href="homework-third" class="homework-card">
+            <div class="homework-card__title">
+              DOM-Тест
+            </div>
+            <div class="homework-card__text">
+              Вариант 3. Грамотность
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer style="background-color: #282c34; color: white; text-align: center; padding: 20px;">
+  <p>© 2024 Ваша компания. Все права защищены.</p>
+  <ul style="list-style-type: none; padding: 0;">
+    <li><a href="main">Главная</a></li>
+    <li><a href="homeworks">Домашние работы</a></li>
+    <li><a href="main">Курсовая работа</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
