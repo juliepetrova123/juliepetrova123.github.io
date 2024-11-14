@@ -4,27 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-<!--  <link rel="stylesheet" href="components/menu/style.css">-->
+  <link rel="stylesheet" href="/pages/main-page/components/about/style.css">
+  <link rel="stylesheet" href="/pages/main-page/components/main-screen/style.css">
+  <link rel="stylesheet" href="/pages/main-page/components/cards/style.css">
   <title>Сайт</title>
 </head>
 <body>
-<!--<div id="menu"></div>-->
 <header>
-<!--  <link rel="stylesheet" href="style.css">-->
-  <script src="components/menu/script.js"></script>
   <div class="logo">
     <div class="circle"></div>
     <div class="line line_first"></div>
     <div class="line line_second"></div>
     <div class="line line_third"></div>
     <div class="line line_fourth"></div>
+    <div class="line line_fifth"></div>
   </div>
   <div class="desktop-menu">
     <nav>
       <ul class="menu">
         <li><a href="/">Главная</a></li>
         <li><a href="/pages/homeworks-page/index.html">Домашние работы</a></li>
-        <li><a href="main">Курсовая работа</a></li>
+        <li><a href="/pages/curse-work-page/index.html">Курсовая работа</a></li>
       </ul>
     </nav>
   </div>
@@ -36,13 +36,14 @@
     </div>
     <nav class="menu-hamburger">
       <ul>
-        <li><a href="main">Главная</a></li>
-        <li><a href="homeworks">Домашние работы</a></li>
-        <li><a href="main">Курсовая работа</a></li>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/pages/homeworks-page/index.html">Домашние работы</a></li>
+        <li><a href="/pages/curse-work-page/index.html">Курсовая работа</a></li>
       </ul>
     </nav>
   </div>
 </header>
+<script src="/components/menu/script.js"></script>
 
 <div id="main-screen" class="main-page-main-screen-wrapper">
   <img
@@ -107,27 +108,26 @@
     </div>
   </div>
 </div>
-<!--<div id="about"></div>-->
-<!--<script>-->
-<!--  fetch('pages/main-page/components/main-screen/index.html')-->
-<!--          .then(response => response.text())-->
-<!--          .then(data => {-->
-<!--            document.getElementById('main-screen').innerHTML = data;-->
-<!--          });-->
-<!--</script>-->
-<!--<script>-->
-<!--  fetch('pages/main-page/components/about/index.html')-->
-<!--          .then(response => response.text())-->
-<!--          .then(data => {-->
-<!--            document.getElementById('about').innerHTML = data;-->
-<!--          });-->
-<!--</script>-->
-<footer style="background-color: #282c34; color: white; text-align: center; padding: 20px;">
-  <p>© 2024 Ваша компания. Все права защищены.</p>
-  <ul style="list-style-type: none; padding: 0;">
-    <li><a href="main">Главная</a></li>
-    <li><a href="homeworks">Домашние работы</a></li>
-    <li><a href="main">Курсовая работа</a></li>
+
+<div class="container carousel-container">
+  <h1 class="carousel-title">Величайшие чудеса природы</h1>
+  <div class="container-scroll">
+    <button class="scroll-button" id="prevButton">←</button>
+    <div class="carousel">
+      <img id="carouselImage" src="/images/land-1.jpg" alt="Изображение 1" />
+      <p id="imageText">Альпы — это величественная горная система в Европе, простирающаяся через восемь стран, включая Францию, Швейцарию, Италию и Австрию. Известные своими захватывающими пейзажами, Альпы представляют собой популярное направление для туристов круглый год.</p>
+    </div>
+    <button class="scroll-button" id="nextButton">→</button>
+  </div>
+</div>
+<script src="pages/main-page/components/cards/cards.js"></script>
+
+<footer>
+  <p>© 2024 Сайт Петровой Ю.Д. Все права защищены.</p>
+  <ul>
+    <li><a href="/">Главная</a></li>
+    <li><a href="/pages/homeworks-page/index.html">Домашние работы</a></li>
+    <li><a href="/pages/curse-work-page/index.html">Курсовая работа</a></li>
   </ul>
 </footer>
 </body>

@@ -1,5 +1,6 @@
 .homeworks-page {
     padding-top: 70px;
+    padding-bottom: 40px;
 }
 
 .homeworks-menu {
@@ -57,6 +58,9 @@
 }
 .homework-card__wrapper:nth-child(3) {
     background-image: url("../../images/pic-3.jpg");
+}
+.homework-card__wrapper:nth-child(4) {
+    background-image: url("../../images/pic-4.jpg");
 }
 
 a.homework-card {
@@ -140,7 +144,7 @@ a {
         font-size: 44px;
         line-height: 56px;
         margin-top: 64px;
-        margin-bottom: -10px;
+        margin-bottom: 0;
     }
     .homeworks-menu__title img {
         width: 68px;
@@ -151,7 +155,6 @@ a {
     }
     .homeworks-menu__content {
         display: grid;
-        /* justify-content: space-between; */
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }

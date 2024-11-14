@@ -16,6 +16,9 @@ footer p {
 footer ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer ul li {
@@ -30,14 +33,21 @@ footer a {
 }
 
 footer a:hover {
-    color: #61dafb; /* Цвет при наведении */
+    color: #61dafb;
 }
 
-/* Социальные сети */
 footer p:last-of-type {
     margin-top: 15px;
 }
 
 footer a {
     margin: 0 10px;
+}
+
+@media screen and (min-width: 600px) {
+    footer ul {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
 }

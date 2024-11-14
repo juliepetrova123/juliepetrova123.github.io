@@ -1,0 +1,68 @@
+.container-homework-fourth-page {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.box {
+    border: 1px solid #cccccc;
+    width: auto;
+    /*min-height: 300px;*/
+    padding: 10px;
+    position: relative;
+}
+
+.box2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 {
+    width: 65%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box3 {
+    height: 120px;
+    display: flex;
+    gap: 10px;
+}
+
+.box4 {
+    width: calc(70% - 12px);
+    min-height: 80px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+
+.container-for-boxes {
+    display: flex;
+    justify-content: space-between;
+    min-height: 600px;
+}
+
+.box1-container-top {
+    display: flex;
+    gap: 20px;
+    min-height: 50px;
+}
+
+.box1-input {
+    width: 70%;
+}
+
+.draggable {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f0f0f0;
+    cursor: move;
+    height: fit-content;
+    width: fit-content;
+}

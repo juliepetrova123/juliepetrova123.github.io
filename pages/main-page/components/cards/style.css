@@ -1,0 +1,57 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 140px;
+    padding-top: 30px;
+    max-height: 700px;
+    flex-direction: column;
+}
+
+.container-scroll {
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 700px;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 85%;
+    max-height: 500px;
+}
+
+.scroll-button {
+    padding: 10px;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #423189;
+    &:hover {
+        background-color: #ddb5dd;
+    }
+}
+
+.carousel-title {
+    color: #000;
+    margin-bottom: 18px;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-title {
+        margin-bottom: 36px;
+        font-size: 46px;
+        line-height: 54px;
+        margin-top: 0;
+    }
+}
