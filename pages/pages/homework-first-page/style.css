@@ -1,0 +1,258 @@
+.homework-first {
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    position: relative;
+    padding-top: 70px;
+    height: 800px;
+}
+.picture__background {
+    width: 200px;
+    height: 200px;
+}
+.picture__background__down {
+    width: 200px;
+    height: 30px;
+    background: repeating-linear-gradient(
+            120deg,
+            #e6f05c,
+            #e6f05c 10px,
+            #45dd66 10px,
+            #45dd66 20px
+    );
+}
+.picture__background__up {
+    width: 200px;
+    height: 170px;
+    background: linear-gradient(180deg, #379bec, #FFFFFF);
+    position: relative;
+    overflow: hidden;
+}
+.picture__balloon {
+    position: absolute;
+    left: -75px;
+    top: -20px;
+}
+.picture__balloon__ball {
+    width: 70px;
+    height: 30px;
+    background: radial-gradient(circle at 27% 40%, #e6ece6 -15%, #ec5a9b 100%);
+    border-radius: 100px / 50px;
+    transform: rotate(78deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    z-index: 1;
+    position: absolute;
+}
+.picture__balloon_ball::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 95%;
+    margin-top: -5px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #ec5a9b;
+    transform: rotate(87deg);
+}
+.picture__balloon__line {
+    width: 150px;
+    height: 70px;
+    border-radius: 300px 300px 0 0;
+    position: absolute;
+    overflow: hidden;
+    left: -33px;
+    border-top: 2px solid #0dc30d;
+    border-left: 2px solid #0dc30d;
+    border-right: 2px solid #0dc30d;
+    transform: rotate(150deg);
+    z-index: 0;
+    top: 130px;
+}
+.picture__donkey {
+    top: 116px;
+    left: 80px;
+    position: relative;
+}
+.picture__donkey__body {
+    width: 80px;
+    height: 40px;
+    background: radial-gradient(circle at 25% 60%, #cbcfcb 3%, #767b74 100%);
+    border-radius: 100px / 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    border: 1px solid grey;
+}
+.picture__donkey__head {
+    width: 44px;
+    height: 22px;
+    background: linear-gradient(to right, gray 32%, white 100%);
+    border-radius: 100px / 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    top: -20px;
+    left: -22px;
+    transform: rotate(165deg);
+    border: 1px solid grey;
+}
+.picture__donkey__neck {
+    width: 18px;
+    height: 20px;
+    background-color: #767b74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: -10px;
+    transform: rotate(155deg);
+}
+.picture__donkey__ears {
+    width: 50px;
+    height: 15px;
+    background: linear-gradient(to right, white 10%, gray 100%);
+    border-radius: 100px / 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    transform: rotate(145deg);
+    top: -40px;
+}
+.picture__donkey__ears_first {
+    left: -3px;
+    transform: rotate(145deg);
+}
+.picture__donkey__ears_second {
+    top: -30px;
+    left: 11px;
+    transform: rotate(160deg);
+}
+.picture__donkey__foot {
+    width: 15px;
+    height: 17px;
+    background-color: #767b74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0 100%);
+}
+.picture__donkey__foot_first {
+    top: 38px;
+    left: 10px;
+    transform: rotate(195deg);
+}
+.picture__donkey__foot_second {
+    top: 39px;
+    left: 26px;
+    transform: rotate(185deg);
+}
+.picture__donkey__foot_third {
+    top: 38px;
+    left: 51px;
+    transform: rotate(180deg);
+}
+.picture__donkey__foot_fourth {
+     top: 32px;
+     left: 67px;
+     transform: rotate(160deg);
+}
+.picture__donkey__tail {
+    position: absolute;
+}
+.picture__donkey__tail__part {
+    width: 20px;
+    height: 10px;
+    border-radius: 300px 300px 0 0;
+    position: absolute;
+    overflow: hidden;
+    border-top: 2px solid #767b74;
+    border-left: 2px solid #767b74;
+    border-right: 2px solid #767b74;
+    z-index: 0;
+}
+.picture__donkey__tail__part_first {
+    left: 75px;
+    top: 3px;
+    transform: rotate(90deg);
+}
+.picture__donkey__tail__part_second {
+    left: 65px;
+    top: -19px;
+    transform: rotate(-90deg);
+}
+.picture__donkey__eye {
+    width: 8.5px;
+    height: 8.5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+    left: 10.5px;
+}
+.picture__donkey__eye__black-part {
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+}
+.picture__donkey__nose {
+    width: 4.5px;
+    height: 4.5px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    position: absolute;
+    border-radius: 50%;
+    right: 3.5px;
+    top: 9.5px;
+}
+.picture__donkey__mouth {
+    width: 9px;
+    height: 2.2px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    position: absolute;
+    right: 3.5px;
+    bottom: 16px;
+    transform: rotate(-12deg);
+}
+.picture__donkey__tail__triangle {
+    position: absolute;
+    top: -29px;
+    left: 80px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #767b74;
+    transform: rotate(76deg);
+    z-index: 1;
+}
+
+.homework-first_new {
+    left: 500px;
+}
