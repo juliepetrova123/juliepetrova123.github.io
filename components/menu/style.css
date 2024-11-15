@@ -66,6 +66,9 @@ header {
     color: #333;
 }
 
+.menu-hamburger {
+    display: none;
+}
 .menu-hamburger.active {
     display: block;
 }
