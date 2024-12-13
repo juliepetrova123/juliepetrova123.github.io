@@ -45,7 +45,7 @@ const levelOneDataHard = [
 
 function chooseSVG() {
     let levelOneData
-    if (localStorage.getItem('difficulty') === 'easy') {
+    if (localStorage.getItem('selectedDifficulty') === 'easy') {
         levelOneData = levelOneDataEasy
     } else {
         levelOneData = levelOneDataHard
