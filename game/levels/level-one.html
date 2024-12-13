@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/level-one.css">
+</head>
+<body>
+<header>
+</header>
+
+<div class="game">
+    <div class="container game-container">
+        <div class="game-wrapper game-wrapper_level-one">
+
+            <div id="gameLevelOne" class="game-level-one">
+                <div id="gameLevelOneHint" class="game-level-one__hint">Чтобы начать игру, нажмите пробел на клавиатуре</div>
+            </div>
+
+
+            <div id="game-modal-difficulty-choice" class="game-modal game-modal-level game-modal_difficulty-choice game-modal_gryffindor">
+                <h1 class="game-modal__title">Выберите сложность</h1>
+                <div class="level-choice__labels">
+                    <label class="level-choice__label">
+                        <input type="radio" name="difficulty" value="easy" checked> ЛЕГКИЙ
+                    </label>
+                    <label class="level-choice__label">
+                        <input type="radio" name="difficulty" value="hard"> СЛОЖНЫЙ
+                    </label>
+                </div>
+                <button id="difficultyChosenButton" class="button_in-modal level-choice-button_in-modal">Выбрать!</button>
+            </div>
+
+            <div id="game-modal-info" class="game-modal game-modal_info game-modal_gryffindor">
+                <h1 id="gameModalTitleTry" class="game-modal__title-try game-modal__title_try-one"></h1>
+                <div class="game-modal-info">
+                    <div class="game-modal-info__text">
+                        Гарри Поттер летает на метле в течение нескольких секунд, Ваша задача - как можно точнее посчитать, сколько секунд Гарри находился в воздухе.
+                    </div>
+                    <div class="game-modal-info__text">
+                        У вас две попытки, результаты будут суммированы!
+                    </div>
+                </div>
+                <button id="levelOneStartButton" class="button_in-modal level-choice-button_in-modal">Старт!</button>
+            </div>
+
+            <div id="game-modal-check" class="game-modal game-modal-level game-modal_check game-modal_gryffindor">
+                <div id="checkResultInput" class="check__result-input">
+                    <h1 class="game-modal__title">Сколько секунд Гарри провел в воздухе?</h1>
+                    <input class="check__input" type="text" id="checkInput" autocomplete="off">
+                    <button id="levelOneCheckButton" class="button_in-modal check-button_in-modal">Проверить!</button>
+                </div>
+                <div id="checkResult" class="check__result">
+                    <p id="checkText" class="check__text"></p>
+                    <button id="levelOneContinueButton" class="button_in-modal continue-button_in-modal">Продолжить</button>
+                    <button class="button_in-modal exit-button_in-modal">Вернуться на главный экран</button>
+                </div>
+            </div>
+
+            <div id="game-modal-result" class="game-modal game-modal-level game-modal_result game-modal_gryffindor">
+                <h1 class="game-modal__title">Уровень пройден!</h1>
+                <div class="result-for-level"></div>
+                <button id="startGameButton2" class="button_in-modal continue-button_in-modal">К выбору уровней</button>
+                <button class="button_in-modal exit-button_in-modal">Вернуться на главный экран</button>
+            </div>
+
+
+            <div id="game-modal-settings" class="game-modal game-modal_settings game-modal_gryffindor">
+                <span class="close-button" onclick="closeModalWindow('game-modal-settings')">&times;</span>
+                <h1 class="game-modal__title">Настройки</h1>
+                <div class="settings-buttons">
+                    <button class="settings-button exit-button_in-modal">
+                        Выйти из игры
+                    </button>
+                    <button id="changeUserButton" class="settings-button">
+                        Сменить игрока
+                    </button>
+                </div>
+                <div class="theme-choice">
+                    <p class="theme-choice__title">Выбери свой факультет</p>
+                    <div class="theme-choice-images">
+                        <button class="theme-choice-image" id="gryffindorButton">
+                            <img class="theme-choice-image"  src="../images/symbol-gryffindor.png">
+                        </button>
+                        <button class="theme-choice-image" id="hufflepuffButton">
+                            <img class="theme-choice-image"  src="../images/symbol-hufflepuff.png">
+                        </button>
+                        <button class="theme-choice-image" id="ravenclawButton">
+                            <img class="theme-choice-image"  src="../images/symbol-ravenclaw.png">
+                        </button>
+                        <button class="theme-choice-image" id="slytherinButton">
+                            <img class="theme-choice-image"  src="../images/symbol-slytherin.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game-modal-statistics" class="game-modal game-modal_statistics game-modal_gryffindor">
+                <span class="close-button" onclick="closeModalWindow('game-modal-statistics')">&times;</span>
+                <h1 class="game-modal__title">Статистика</h1>
+                <div id="statisticsContainer" class="statistics-container"></div>
+            </div>
+
+            <button id="openModalUserButton" class="open-modal-button open-modal-button_user">
+                <img class="open-modal-icon"  src="../images/user-info-button.png">
+            </button>
+            <div id="userInfo" class="user-info"></div>
+            <div class="open-modal-buttons">
+                <button id="openModalStatisticsButton" class="open-modal-button open-modal-button_statistics">
+                    <img class="open-modal-icon"  src="../images/stat-button.svg">
+                </button>
+                <button id="openModalSettingsButton" class="open-modal-button open-modal-button_settings">
+                    <img class="open-modal-icon"  src="../images/settings-button.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/level-one.js"></script>
+</body>

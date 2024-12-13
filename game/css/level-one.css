@@ -1,0 +1,89 @@
+.game-modal-level, .game-modal_info {
+    background: lightgray;
+    border: none;
+}
+
+.game-modal_info {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.game-modal-info__text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.check__input {
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    padding: 4px;
+}
+.check__text {
+    text-align: center;
+    font-size: 20px;
+}
+
+.check__result-input, .check__result {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.game-modal_check {
+    padding-top: 20px;
+}
+
+.game-modal_result {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.game-wrapper_level-one {
+    background-image: url("../images/bg-level-one.png");
+}
+
+.game-modal_difficulty-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.game-wrapper_level-one .game-modal_settings {
+    position: absolute;
+}
+
+.animated-svg {
+    position: absolute;
+}
+
+.animated-point {
+    display: none;
+}
+.start-animation .animated-point {
+    display: inline;
+}
+
+.check__result {
+    display: none;
+}
+
+.game-level-one {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.game-level-one__hint {
+    display: none;
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid #FFF;
+    align-items: center;
+}

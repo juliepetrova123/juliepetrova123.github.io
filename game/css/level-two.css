@@ -1,0 +1,50 @@
+.game-wrapper_level-two {
+    background-image: url("../images/bg-level-two.png");
+}
+
+div.game-wrapper_level-two-active {
+    display: block;
+}
+
+div.game-wrapper_level-two-active .game-modal {
+    left: 25%;
+    top: 20%;
+}
+
+.game-level-two {
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.game-level-two__hint {
+    position: absolute;
+    top: 10px;
+    padding: 15px;
+    background-color: lightgray;
+    border: 1px solid #FFF;
+    align-items: center;
+    z-index: 9;
+    display: none;
+    text-align: center;
+}
+
+.svg_level-two {
+    position: absolute;
+}
+
+.check__result_two {
+    display: flex;
+}
+
+.animated-point-two {
+    display: inline;
+}
+
+#randomImage {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 9;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+</header>
+
+<div class="game">
+  <div class="container game-container">
+    <div class="game-wrapper game-wrapper_home-screen">
+
+      <button id="startGameButton" class="start-game-button">ИГРАТЬ</button>
+
+      <div id="game-modal-name-input" class="game-modal game-modal_name-input game-modal_gryffindor">
+        <h1 class="game-modal__title">Войдите или зарегистрируйтесь</h1>
+        <div class="game-modal__input-container">
+          <p class="game-modal__text">Логин</p>
+          <input class="name-modal__input" type="text" id="nameInput" placeholder="..." autocomplete="off">
+        </div>
+        <div class="game-modal__input-container">
+          <p class="game-modal__text">Пароль</p>
+          <input class="name-modal__input" type="text" id="passwordInput" placeholder="..." autocomplete="off">
+        </div>
+        <button id="startGameButton1" class="button_in-modal start-game-button_in-modal">ИГРАТЬ</button>
+      </div>
+
+      <div id="game-modal-level-choice" class="game-modal game-modal_level-choice game-modal_gryffindor">
+        <span class="close-button" onclick="closeModalWindow('game-modal-level-choice')">&times;</span>
+        <h1 class="game-modal__title">Выберите уровень</h1>
+          <div class="level-choice__labels">
+              <label class="level-choice__label">
+                  <input type="radio" name="level" value="first" checked> УРОВЕНЬ 1
+              </label>
+              <label class="level-choice__label">
+                  <input type="radio" name="level" value="second"> УРОВЕНЬ 2
+              </label>
+          </div>
+        <button id="levelChosenButton" class="button_in-modal level-choice-button_in-modal">Выбрать!</button>
+      </div>
+
+      <div id="game-modal-settings" class="game-modal game-modal_settings game-modal_gryffindor">
+        <span class="close-button" onclick="closeModalWindow('game-modal-settings')">&times;</span>
+        <h1 class="game-modal__title">Настройки</h1>
+        <div class="settings-buttons">
+          <button id="changeUserButton" class="settings-button">
+            Сменить игрока
+          </button>
+        </div>
+        <div class="theme-choice">
+          <p class="theme-choice__title">Выбери свой факультет</p>
+          <div class="theme-choice-images">
+            <button class="theme-choice-image" id="gryffindorButton">
+              <img class="theme-choice-image"  src="images/symbol-gryffindor.png">
+            </button>
+            <button class="theme-choice-image" id="hufflepuffButton">
+              <img class="theme-choice-image"  src="images/symbol-hufflepuff.png">
+            </button>
+            <button class="theme-choice-image" id="ravenclawButton">
+              <img class="theme-choice-image"  src="images/symbol-ravenclaw.png">
+            </button>
+            <button class="theme-choice-image" id="slytherinButton">
+              <img class="theme-choice-image"  src="images/symbol-slytherin.png">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="game-modal-statistics" class="game-modal game-modal_statistics game-modal_gryffindor">
+        <span class="close-button" onclick="closeModalWindow('game-modal-statistics')">&times;</span>
+        <h1 class="game-modal__title">Статистика</h1>
+        <div id="statisticsContainer" class="statistics-container"></div>
+      </div>
+
+      <button id="openModalUserButton" class="open-modal-button open-modal-button_user">
+        <img class="open-modal-icon"  src="images/user-info-button.png">
+      </button>
+      <div id="userInfo" class="user-info"></div>
+      <div class="open-modal-buttons">
+        <button id="openModalStatisticsButton" class="open-modal-button open-modal-button_statistics">
+          <img class="open-modal-icon"  src="images/stat-button.svg">
+        </button>
+        <button id="openModalSettingsButton" class="open-modal-button open-modal-button_settings">
+          <img class="open-modal-icon"  src="images/settings-button.svg">
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
