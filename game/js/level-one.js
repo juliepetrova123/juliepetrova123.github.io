@@ -2,12 +2,12 @@ const levelOneDataEasy = [
     {
         id: 0,
         imagePath: '../images/level-one/vector-one.svg',
-        time: 4000,
+        time: 8000,
     },
     {
         id: 1,
         imagePath: '../images/level-one/vector-3.svg',
-        time: 3000,
+        time: 5000,
     },
     {
         id: 2,
