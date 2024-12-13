@@ -2,7 +2,7 @@ const levelOneDataEasy = [
     {
         id: 0,
         imagePath: '../images/level-one/vector-one.svg',
-        time: 8000,
+        time: 5000,
     },
     {
         id: 1,
@@ -12,12 +12,12 @@ const levelOneDataEasy = [
     {
         id: 2,
         imagePath: '../images/level-one/vector-4.svg',
-        time: 6000,
+        time: 5000,
     },
     {
         id: 3,
         imagePath: '../images/level-one/vector-5.svg',
-        time: 6000,
+        time: 5000,
     },
 ]
 const levelOneDataHard = [
@@ -61,6 +61,7 @@ function chooseSVG() {
         time: selectedItem.time
     };
 }
+
 function gameLevelOne () {
     //Выбираем случайную картинку
     const svgData = chooseSVG()
@@ -108,6 +109,7 @@ function gameLevelOne () {
 
 //Ввод ответа
 function check(rightAnswer) {
+    // removeKeyDownListener();
     openModalWindow("game-modal-check");
     if(localStorage.getItem('try') === 'second' && localStorage.getItem('action') === 'game') {
         document.getElementById('checkResult').style.display = 'none';
